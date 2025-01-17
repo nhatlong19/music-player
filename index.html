@@ -40,7 +40,6 @@
                 <!-- hình CD hiển thị ảnh bài hát hoặc nghệ sỹ của bài hát -->
                 <div class="cd">
                     <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')"></div>
-                    <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
                 </div>
 
                 <!-- Control -->
@@ -82,25 +81,6 @@
         <!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
         <script src ="main.js"></script>
 
-        <script>
-     fetch('https://hangotest.matomo.cloud/matomo.php?module=API&method=VisitsSummary.getVisits&pageUrl=https://nhatlong19.github.io/music-player&action_name=Total%20pageviews&format=json&token_auth=8c33179c46691a74ff321a2766e15400', {
-    mode: 'cors'
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-        console.log(response)
-    })
-    .then(data => {
-        console.log('Dữ liệu lượt view:', data);
-    })
-    .catch(error => {
-        console.error('Lỗi khi lấy dữ liệu lượt view từ Matomo:', error);
-    });
-    </script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=668b5cab7bead900194804be&product=sop' async='async'></script>
     </body>
 </html>
